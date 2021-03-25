@@ -14,7 +14,7 @@ df = df[df['value'] < df['value'].quantile(.975)]
 
 def draw_line_plot():
     # Draw line plot
-
+    fig = df.plot(y='value', title='Daily freeCodeCamp Forum Page Views 5/2016-12/2019', xlabel='Date', ylabel='Page Views')
 
 
 
