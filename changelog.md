@@ -1,5 +1,8 @@
 # in-progress branch changelog
 
+## 03/26/2021 20:06
+Working on creating the bar chart. Figured out how to sum values by month, now working on how to plot it so all months are grouped by year. 
+
 ## 03/25/2021 19:22
 Created the line plot function.
 
