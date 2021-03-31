@@ -1,5 +1,8 @@
 # in-progress branch changelog
 
+## 03/31/2021 07:50
+My changes contain what I think either is or is very close to the example two chart. Sketches contain the chart and other code cells required to manipulate/pivot the data accordingly.
+
 ## 03/26/2021 20:06
 Working on creating the bar chart. Figured out how to sum values by month, now working on how to plot it so all months are grouped by year. 
 
