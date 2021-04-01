@@ -14,7 +14,7 @@ df = df[df['value'] < df['value'].quantile(.975)]
 
 def draw_line_plot():
     # Draw line plot
-    fig = df.plot(y='value', title='Daily freeCodeCamp Forum Page Views 5/2016-12/2019', xlabel='Date', ylabel='Page Views')
+    fig = df.plot(y='value', title='Daily freeCodeCamp Forum Page Views 5/2016-12/2019', xlabel='Date', ylabel='Page Views').get_figure()
 
 
 
@@ -33,7 +33,7 @@ def draw_bar_plot():
     df_bar = pd.pivot_table(df_bar, values='value', index=['year', 'month'])
 
     # Draw bar plot
-    fig = df_bar.unstack().plot(kind='bar', xlabel='Years', ylabel='Average Page Views')  # this may require additional work for the yticks
+    fig = df_bar.unstack().plot(kind='bar', xlabel='Years', ylabel='Average Page Views').get_figure()  # this may require additional work for the yticks
     fig.legend(['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'])
 
 
