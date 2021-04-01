@@ -1,5 +1,8 @@
 # in-progress branch changelog
 
+## 04/01/2021 18:43
+Figured out how to chart the first chart for years (need to still add a title). Need to figure out how to get both charts on the same figure, but before that, I need to make sure I can plot the other chart.
+
 ## 04/01/2021 07:42
 Added the second bar chart code to the .py file. I'm not sure if I'll need to adjust the yticks for this chart yet, but I guess I'll find out when I run the test. Starting the seaborn plot, but I know this will take a while since I really have no idea how to use seaborn.
 
