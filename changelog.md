@@ -1,5 +1,8 @@
 # in-progress branch changelog
 
+## 04/01/2021 19:39
+Got the other chart to work and got it to plot w/ a subplot. I think I have everything I need to run the test. Curious to see what's not right; got a feeling it probably won't like me using pandas built-in plotting methods for charts.
+
 ## 04/01/2021 18:43
 Figured out how to chart the first chart for years (need to still add a title). Need to figure out how to get both charts on the same figure, but before that, I need to make sure I can plot the other chart.
 
