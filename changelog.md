@@ -1,5 +1,8 @@
 # in-progress branch changelog
 
+## 04/01/2021 07:42
+Added the second bar chart code to the .py file. I'm not sure if I'll need to adjust the yticks for this chart yet, but I guess I'll find out when I run the test. Starting the seaborn plot, but I know this will take a while since I really have no idea how to use seaborn.
+
 ## 03/31/2021 07:50
 My changes contain what I think either is or is very close to the example two chart. Sketches contain the chart and other code cells required to manipulate/pivot the data accordingly.
 

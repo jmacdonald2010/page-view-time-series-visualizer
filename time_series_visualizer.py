@@ -25,10 +25,16 @@ def draw_line_plot():
 
 def draw_bar_plot():
     # Copy and modify data for monthly bar plot
-    df_bar = None
+    df_bar = df.reset_index()
+    df_bar['date'] = pd.to_datetime(df_bar['date'], format='%Y-%m')
+    df_bar = df_bar.groupby(pd.Grouper(key='date', freq='M')).sum()
+    df_bar['year'] = df_bar.index.year
+    df_bar['month'] = df_bar.index.month
+    df_bar = pd.pivot_table(df_bar, values='value', index=['year', 'month'])
 
     # Draw bar plot
-
+    fig = df_bar.unstack().plot(kind='bar', xlabel='Years', ylabel='Average Page Views')  # this may require additional work for the yticks
+    fig.legend(['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'])
 
 
 
@@ -41,6 +47,7 @@ def draw_box_plot():
     # Prepare data for box plots (this part is done!)
     df_box = df.copy()
     df_box.reset_index(inplace=True)
+    df_box['date'] = pd.to_datetime(df_box['date'], format='%Y-%m') # adding this line b/c their's doesn't work
     df_box['year'] = [d.year for d in df_box.date]
     df_box['month'] = [d.strftime('%b') for d in df_box.date]
 
