@@ -1,5 +1,8 @@
 # in-progress branch changelog
 
+## 04/02/2021 19:54
+Fixed another error: out of order months for the boxplot.
+
 ## 04/02/2021 19:21
 Fixed one issue, now only two tests failed. Passed tests are for data cleaning and line plot.
 
