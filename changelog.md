@@ -1,5 +1,8 @@
 # in-progress branch changelog
 
+## 04/02/2021 19:21
+Fixed one issue, now only two tests failed. Passed tests are for data cleaning and line plot.
+
 ## 04/01/2021 19:52
 Ran the test, had four failures. Failures are detailed below:
 
