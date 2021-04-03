@@ -1,5 +1,8 @@
 # in-progress branch changelog
 
+## 04/02/2021 20:57
+Passed the last test, finished the assignment. Merging to main after copying the repl.it link to freeCodeCamp.
+
 ## 04/02/2021 19:54
 Fixed another error: out of order months for the boxplot.
 

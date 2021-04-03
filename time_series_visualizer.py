@@ -32,8 +32,9 @@ def draw_bar_plot():
     df_bar = pd.pivot_table(df_bar, values='value', index=['year', 'month'])
 
     # Draw bar plot
-    fig = df_bar.unstack().plot(kind='bar', xlabel='Years', ylabel='Average Page Views').get_figure()  # this may require additional work for the yticks
+    fig = df_bar.unstack().plot(kind='bar', xlabel='Years', ylabel='Average Page Views', legend=False)  # this may require additional work for the yticks
     fig.legend(['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'])
+    fig = fig.get_figure()
 
 
 
